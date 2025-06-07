@@ -43,6 +43,8 @@ Runs an interactive console menu for choosing operations (write, read, modify, o
 ## 🥇 Output
 ![Image](https://github.com/user-attachments/assets/cc576252-bc37-49d2-98d3-64dc9921f7a9)
 
+![Image](https://github.com/user-attachments/assets/558b1722-f029-44d3-af89-831636a3f2b8)
+
 ## 🧑‍💻 Author
 Developed by **Jatin Gangare**
 

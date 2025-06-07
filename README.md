@@ -40,6 +40,9 @@ Replaces all occurrences of `target` with `replacement`. Creates a `.bak` backup
 ### `main(String[] args)`
 Runs an interactive console menu for choosing operations (write, read, modify, or exit).
 
+## 🥇 Output
+![Image](https://github.com/user-attachments/assets/cc576252-bc37-49d2-98d3-64dc9921f7a9)
+
 ## 🧑‍💻 Author
 Developed by **Jatin Gangare**
 

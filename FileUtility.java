@@ -11,9 +11,9 @@ public class FileUtility {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, append))) {
             writer.write(content);
             writer.newLine();
-            System.out.println("✅ File written successfully.");
+            System.out.println("File written successfully.");
         } catch (IOException e) {
-            System.out.println("❌ Error writing to file: " + e.getMessage());
+            System.out.println("Error writing to file: " + e.getMessage());
         }
     }
 
@@ -21,19 +21,19 @@ public class FileUtility {
     public static void readFile(String filePath) {
         File file = new File(filePath);
         if (!file.exists()) {
-            System.out.println("⚠️ File does not exist.");
+            System.out.println("File does not exist.");
             return;
         }
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             int lineNum = 1;
-            System.out.println("📄 File Contents:");
+            System.out.println("File Contents:");
             while ((line = reader.readLine()) != null) {
                 System.out.println(lineNum++ + ": " + line);
             }
         } catch (IOException e) {
-            System.out.println("❌ Error reading file: " + e.getMessage());
+            System.out.println("Error reading file: " + e.getMessage());
         }
     }
 
@@ -41,16 +41,16 @@ public class FileUtility {
     public static void modifyFile(String filePath, String target, String replacement) {
         File file = new File(filePath);
         if (!file.exists()) {
-            System.out.println("⚠️ File does not exist.");
+            System.out.println("File does not exist.");
             return;
         }
 
         // Create backup before modifying
         try {
             Files.copy(Paths.get(filePath), Paths.get(filePath + ".bak"), StandardCopyOption.REPLACE_EXISTING);
-            System.out.println("🗂️ Backup created: " + filePath + ".bak");
+            System.out.println("Backup created: " + filePath + ".bak");
         } catch (IOException e) {
-            System.out.println("❌ Error creating backup: " + e.getMessage());
+            System.out.println("Error creating backup: " + e.getMessage());
         }
 
         StringBuilder modifiedContent = new StringBuilder();
@@ -62,16 +62,16 @@ public class FileUtility {
                 modifiedContent.append(line.replaceAll(target, replacement)).append("\n");
             }
         } catch (IOException e) {
-            System.out.println("❌ Error reading file for modification: " + e.getMessage());
+            System.out.println("Error reading file for modification: " + e.getMessage());
             return;
         }
 
         // Step 2: Write modified content back to the file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             writer.write(modifiedContent.toString());
-            System.out.println("✏️ File modified successfully.");
+            System.out.println("File modified successfully.");
         } catch (IOException e) {
-            System.out.println("❌ Error writing modified content: " + e.getMessage());
+            System.out.println("Error writing modified content: " + e.getMessage());
         }
     }
 
@@ -119,16 +119,16 @@ public class FileUtility {
                         break;
 
                     case "3":
-                        System.out.println("\n📄 Reading file...");
+                        System.out.println("\nReading file...");
                         readFile(filePath);
                         break;
 
                     case "4":
-                        System.out.println("👋 Exiting program. Goodbye!");
+                        System.out.println("Exiting program. Goodbye!");
                         return;
 
                     default:
-                        System.out.println("❌ Invalid choice. Please try again.");
+                        System.out.println("Invalid choice. Please try again.");
                 }
             }
         }

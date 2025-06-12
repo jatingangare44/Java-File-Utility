@@ -41,11 +41,11 @@ Replaces all occurrences of `target` with `replacement`. Creates a `.bak` backup
 Runs an interactive console menu for choosing operations (write, read, modify, or exit).
 
 ## 🥇 Output
-![Image](https://github.com/user-attachments/assets/cc576252-bc37-49d2-98d3-64dc9921f7a9)
+![Image](https://github.com/user-attachments/assets/0f59abbf-f214-458c-ab11-56ea4505297d)
 
-![Image](https://github.com/user-attachments/assets/558b1722-f029-44d3-af89-831636a3f2b8)
+![Image](https://github.com/user-attachments/assets/7280ab83-0563-436d-bf0d-531de1f8b21d)
 
-![Image](https://github.com/user-attachments/assets/14ec9a15-12ec-4323-a9cc-d2f9b32ab8e2)
+![Image](https://github.com/user-attachments/assets/4a1b3d80-c36d-4a13-a225-bff6699e2d0b)
 
 ## 🧑‍💻 Author
 Developed by **Jatin Gangare**
